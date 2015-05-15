@@ -44,14 +44,14 @@ public class CommandHistory extends Command {
 				if(ss.startsWith("#r Version")){
 					return changes; 
 				}
-				if (!ss.startsWith("#")) {
-					if (ss.startsWith("Create")) {
-						ss = ss.substring("Create".length());
-						ss = "Created" + ss;
+				if (!ss.startsWith("#") && !ss.startsWith("Merge branch")) {
+					if (ss.startsWith("Create ")) {
+						ss = ss.substring("Create ".length());
+						ss = "Created " + ss;
 					}
-					if (ss.startsWith("Delete")) {
-						ss = ss.substring("Delete".length());
-						ss = "Deleted" + ss;
+					if (ss.startsWith("Delete ")) {
+						ss = ss.substring("Delete ".length());
+						ss = "Deleted " + ss;
 					}
 					changes.add(ss);
 				}
