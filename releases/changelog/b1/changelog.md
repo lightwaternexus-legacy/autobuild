@@ -1,0 +1,11 @@
+# autobuild b1:
+- "# test commit"
+- "# first commit"
+- "Added clone command"
+- "Added commit command"
+- "Added history command"
+- "Added pull command"
+- "Added release command"
+- "Added stop command"
+- "# Fixing utility files"
+- "Set up buildbot"
