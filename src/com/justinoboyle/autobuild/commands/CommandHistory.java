@@ -42,7 +42,7 @@ public class CommandHistory extends Command {
 				ss = ss.split(":")[1];
 				ss = ss.replace("\"", "");
 				if(ss.startsWith("#r Version")){
-					return changes;
+					return changes; 
 				}
 				if (!ss.startsWith("#")) {
 					if (ss.startsWith("Create")) {
