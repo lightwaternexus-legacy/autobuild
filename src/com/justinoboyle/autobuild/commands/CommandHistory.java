@@ -40,6 +40,7 @@ public class CommandHistory extends Command {
 		for (String ss : s.split(",")) {
 			if (ss.contains(":") && ss.startsWith("\"message\"")) {
 				ss = ss.split(":")[1];
+				ss = ss.replace("\"", "");
 				if(ss.startsWith("#r Version")){
 					return changes;
 				}
